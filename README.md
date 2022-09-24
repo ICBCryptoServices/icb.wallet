@@ -12,7 +12,7 @@ This is distribute service ICB Wallet that user can deploy own ICB wallet on to 
   
 ## Get started
 ```ruby
-git clone https://github.com/icbchain/icb.wallet.git
+git clone https://github.com/ICBCryptoServices/icb.wallet.git
 ```
 ```ruby
 $ docker login docker-dev.icbcrypto.services
