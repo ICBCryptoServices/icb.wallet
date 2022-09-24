@@ -1,0 +1,28 @@
+version: '3'
+
+networks:
+  default:
+    driver: bridge
+
+services:
+  icb-wallet:
+    image: docker-dev.icbcrypto.services/icb-wallet-api:latest
+    container_name: icb-wallet
+    ports: 
+      - 7214:7214
+      - 5214:5214
+
+  nginx: 
+    container_name: icb-wallet-nginx-proxy
+    image: nginx:latest
+    networks:
+      default:
+    restart: always
+    ports: 
+      - 443:443
+      - 80:80
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+     - icb-wallet
