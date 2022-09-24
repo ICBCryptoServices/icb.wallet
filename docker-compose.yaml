@@ -8,6 +8,8 @@ services:
   icb-wallet:
     image: docker-dev.icbcrypto.services/icb-wallet-api:latest
     container_name: icb-wallet
+    ports: 
+      - 8081:80
     networks:
       default:
        aliases:
