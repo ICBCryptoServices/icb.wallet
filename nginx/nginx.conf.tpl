@@ -52,7 +52,7 @@ http {
       ssl_stapling_verify       on;
 
       location / {
-        proxy_pass http://icb-wallet:5214;
+        proxy_pass http://icb-wallet:7214;
         proxy_read_timeout    120;
         proxy_connect_timeout 90;
         proxy_redirect        off;
