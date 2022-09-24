@@ -1,6 +1,6 @@
 
 
-# ![alt text](https://github.com/icbchain/icb.wallet/blob/main/ICB-Logo.png?raw=true) icb.wallet
+# ![alt text](https://github.com/ICBCryptoServices/icb.wallet/blob/main/ICB-Logo.png?raw=true) icb.wallet
 This is distribute service ICB Wallet that user can deploy own ICB wallet on to own server
 
 
