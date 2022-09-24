@@ -9,7 +9,7 @@ services:
     image: docker-dev.icbcrypto.services/icb-wallet-api:latest
     container_name: icb-wallet
     ports: 
-      - 80:80
+      - 80:1742
 
   nginx: 
     container_name: icb-wallet-nginx-proxy
