@@ -12,7 +12,7 @@ This is distribute service ICB Wallet that user can deploy own ICB wallet on to 
   
 ## Get started
 ```ruby
-git clone https://github.com/ICBCryptoServices/icb.wallet.git
+$ git clone https://github.com/ICBCryptoServices/icb.wallet.git
 ```
 ```ruby
 $ docker login docker-dev.icbcrypto.services
@@ -22,6 +22,9 @@ username : docker
 password : docker
 ```
 
+> Note: you should enter into folder icb.wallet
+
+
 ### Edit config env.config
   ```
 export SERVER_NAME=[YOUR DOMAIN NAME]
@@ -29,6 +32,14 @@ export SERVER_NAME=[YOUR DOMAIN NAME]
 > Note: [YOUR DOMAIN NAME] is domain address that you are registered for website!
 
 ## Configure SSL Certificates
+
+> Note: you should enter into folder icb.wallet/nginx/ssl
+
+### Generate SSL Private Key
+  ```ruby
+$ openssl req -newkey rsa:2048 -nodes -keyout ssl.key -out ssl.csr
+
+```
 ### Edit SSL Key ssl.key in nginx/ssl/
   ```
 -----BEGIN PRIVATE KEY-----
@@ -50,6 +61,18 @@ export SERVER_NAME=[YOUR DOMAIN NAME]
 
 
 
+<details><summary>Important for Linux -bash: ./manage.sh: Permission denied</summary>
+<p>
+
+> Note: ** if you are using linux you should access to manage.ssh **
+
+
+```
+$ chmod u=rwx,g=r,o=r manage.sh
+```
+
+</p>
+</details>
 ### Run a web wallet
 open terminal and used command line
   ```ruby
@@ -59,14 +82,3 @@ $ ./manage.sh start
 ```
 
 
-<details><summary>Important for Linux - Access Permission</summary>
-<p>
-
-> Note: ** if you are using linux you should access to manage.ssh **
-
-```
-$ chmod u=rwx,g=r,o=r manage.sh
-```
-
-</p>
-</details>
