@@ -12,10 +12,10 @@ This is distribute service ICB Wallet that user can deploy own ICB wallet on to 
   
 ## Get started
 ```ruby
-$ git clone https://github.com/ICBCryptoServices/icb.wallet.git
+git clone https://github.com/ICBCryptoServices/icb.wallet.git
 ```
 ```ruby
-$ docker login docker-dev.icbcrypto.services
+docker login docker-dev.icbcrypto.services
 ```
 ```
 username : docker
@@ -37,7 +37,7 @@ export SERVER_NAME=[YOUR DOMAIN NAME]
 
 ### Generate SSL Private Key
   ```ruby
-$ openssl req -newkey rsa:2048 -nodes -keyout ssl.key -out ssl.csr
+openssl req -newkey rsa:2048 -nodes -keyout ssl.key -out ssl.csr
 
 ```
 ### Edit SSL Key ssl.key in nginx/ssl/
@@ -68,7 +68,7 @@ $ openssl req -newkey rsa:2048 -nodes -keyout ssl.key -out ssl.csr
 
 
 ```
-$ chmod u=rwx,g=r,o=r manage.sh
+chmod u=rwx,g=r,o=r manage.sh
 ```
 
 </p>
@@ -76,9 +76,9 @@ $ chmod u=rwx,g=r,o=r manage.sh
 ### Run a web wallet
 open terminal and used command line
   ```ruby
-$ cd icb.wallet
-$ ./manage.sh init
-$ ./manage.sh start
+cd icb.wallet
+./manage.sh init
+./manage.sh start
 ```
 
 
