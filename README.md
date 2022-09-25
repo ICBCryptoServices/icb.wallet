@@ -61,19 +61,12 @@ openssl req -newkey rsa:2048 -nodes -keyout ssl.key -out ssl.csr
 
 
 
-<details><summary>Important for Linux -bash: ./manage.sh: Permission denied</summary>
-<p>
-
+### Important for Linux -bash: ./manage.sh: Permission denied
 > Note: ** if you are using linux you should access to manage.ssh **
-
-
-```
+  ```ruby
 chmod u=rwx,g=r,o=r manage.sh
+
 ```
-
-</p>
-</details>
-
 
 
 ### Run a web wallet
